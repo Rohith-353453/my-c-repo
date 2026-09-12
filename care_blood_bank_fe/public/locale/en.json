@@ -56,4 +56,10 @@
   ,"blood_bank__step_test": "Test"
   ,"blood_bank__step_store": "Store"
   ,"blood_bank__step_issue": "Issue"
+  ,"blood_bank__breadcrumb_home": "Clinical services"
+  ,"blood_bank__breadcrumb_current": "Blood bank"
+  ,"blood_bank__last_updated": "Last updated just now"
+  ,"blood_bank__section_snapshot": "Today's snapshot"
+  ,"blood_bank__section_operations": "Operations"
+  ,"blood_bank__section_insights": "Insights"
 }
