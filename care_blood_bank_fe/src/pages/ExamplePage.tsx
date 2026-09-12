@@ -35,7 +35,7 @@ export default function ExamplePage() {
   const openRequests = requests.data?.filter((item) => item.status === "pending") ?? [];
 
   return (
-    <div className="min-h-screen bg-[#f7f9f8] text-secondary-900">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top_right,_#ecfdf5,_transparent_32%),#f7f9f8] text-secondary-900">
       <div className="mx-auto max-w-7xl p-5 sm:p-8">
         <header className="flex flex-col gap-5 border-b border-secondary-200 pb-7 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-4">
@@ -63,6 +63,12 @@ export default function ExamplePage() {
               {t("blood_bank__export")}
             </button>
           </div>
+          <nav className="flex items-center gap-1 overflow-x-auto border-t border-secondary-100 pt-4 text-sm font-semibold sm:ml-16 sm:mt-[-1.25rem] sm:border-0 sm:pt-0">
+            <NavItem active label={t("blood_bank__nav_overview")} />
+            <NavItem label={t("blood_bank__nav_inventory")} />
+            <NavItem label={t("blood_bank__nav_requests")} />
+            <NavItem label={t("blood_bank__nav_donors")} />
+          </nav>
         </header>
 
         <main className="mt-7">
@@ -171,8 +177,9 @@ function InventoryPanel({
                 </div>
                 <div className="min-w-0">
                   <p className="truncate font-semibold">{unit.donation_id}</p>
-                  <p className="text-sm capitalize text-secondary-500">
-                    {unit.blood_group} · {unit.component.replace("_", " ")}
+                  <p className="flex items-center gap-2 text-sm capitalize text-secondary-500">
+                    <span className="rounded-md bg-rose-100 px-1.5 py-0.5 text-xs font-bold text-rose-800">{unit.blood_group}</span>
+                    {unit.component.replace("_", " ")}
                   </p>
                 </div>
               </div>
@@ -213,7 +220,9 @@ function RequestsPanel({
         <p className="p-5 text-sm text-secondary-600">{t("blood_bank__loading")}</p>
       ) : (
         <div className="space-y-3 p-4">
-          {requests.map((request) => (
+          {requests.length === 0 ? (
+            <div className="p-5 text-sm text-secondary-600">{t("blood_bank__no_requests")}</div>
+          ) : requests.map((request) => (
             <div key={request.external_id} className="rounded-xl border border-secondary-200 p-4">
               <div className="flex items-start justify-between gap-3">
                 <div>
@@ -234,5 +243,19 @@ function RequestsPanel({
         </div>
       )}
     </section>
+  );
+}
+
+function NavItem({ label, active = false }: { label: string; active?: boolean }) {
+  return (
+    <button
+      className={`whitespace-nowrap rounded-lg px-3 py-2 transition ${
+        active
+          ? "bg-primary-100 text-primary-800"
+          : "text-secondary-500 hover:bg-secondary-100 hover:text-secondary-800"
+      }`}
+    >
+      {label}
+    </button>
   );
 }

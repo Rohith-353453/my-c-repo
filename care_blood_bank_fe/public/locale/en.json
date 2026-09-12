@@ -26,4 +26,9 @@
   ,"blood_bank__quick_action_title": "Keep inventory moving"
   ,"blood_bank__quick_action_detail": "Register a newly collected unit in less than a minute."
   ,"blood_bank__add_unit": "Add blood unit"
+  ,"blood_bank__nav_overview": "Overview"
+  ,"blood_bank__nav_inventory": "Inventory"
+  ,"blood_bank__nav_requests": "Requests"
+  ,"blood_bank__nav_donors": "Donors"
+  ,"blood_bank__no_requests": "No requests are waiting for review."
 }
