@@ -1,0 +1,29 @@
+{
+  "blood_bank__page_title": "Care Blood Bank",
+  "blood_bank__action_label": "Open Care Blood Bank",
+  "blood_bank__loading": "Loading…",
+  "blood_bank__eyebrow": "Clinical services",
+  "blood_bank__available_units": "Available units",
+  "blood_bank__registered_donors": "Registered donors",
+  "blood_bank__open_requests": "Open requests",
+  "blood_bank__inventory_title": "Available inventory",
+  "blood_bank__donation_id": "Donation ID",
+  "blood_bank__blood_group": "Blood group",
+  "blood_bank__component": "Component",
+  "blood_bank__expires": "Expires",
+  "blood_bank__load_error": "Unable to load blood-bank data."
+  ,"blood_bank__live": "Live"
+  ,"blood_bank__last_synced": "Synced just now"
+  ,"blood_bank__export": "Export report"
+  ,"blood_bank__readiness": "Today's readiness"
+  ,"blood_bank__ready": "Ready for issue"
+  ,"blood_bank__ready_detail": "Inventory checks are up to date"
+  ,"blood_bank__inventory_subtitle": "Units currently available for allocation"
+  ,"blood_bank__requests_title": "Priority requests"
+  ,"blood_bank__requests_subtitle": "Requests awaiting action"
+  ,"blood_bank__units": "units"
+  ,"blood_bank__review_request": "Review request"
+  ,"blood_bank__quick_action_title": "Keep inventory moving"
+  ,"blood_bank__quick_action_detail": "Register a newly collected unit in less than a minute."
+  ,"blood_bank__add_unit": "Add blood unit"
+}
