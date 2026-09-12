@@ -1,0 +1,15 @@
+{
+  "blood_bank__page_title": "Care Blood Bank",
+  "blood_bank__action_label": "Open Care Blood Bank",
+  "blood_bank__loading": "Loading…",
+  "blood_bank__eyebrow": "Clinical services",
+  "blood_bank__available_units": "Available units",
+  "blood_bank__registered_donors": "Registered donors",
+  "blood_bank__open_requests": "Open requests",
+  "blood_bank__inventory_title": "Available inventory",
+  "blood_bank__donation_id": "Donation ID",
+  "blood_bank__blood_group": "Blood group",
+  "blood_bank__component": "Component",
+  "blood_bank__expires": "Expires",
+  "blood_bank__load_error": "Unable to load blood-bank data."
+}
